@@ -14,5 +14,7 @@ So, I wrote this script to do that for me.
 You will need to clone this repo and just execute in your terminal like this:
 
 ````bash
-python main.py
+python main.py TOKEN
 ````
+
+Version of Python 2.7.12

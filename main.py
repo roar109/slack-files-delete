@@ -7,11 +7,12 @@ import httplib2
 import json
 import calendar
 import urllib
+import sys
 from datetime import datetime, timedelta
 
-TOKEN = "YOURTOKEN"
-DAYS = 30
-
+TOKEN = sys.argv[1]
+DAYS = 60
+print sys.argv
 date = str(calendar.timegm((datetime.now() + timedelta(- DAYS)).utctimetuple()))
 
 params = {"token": TOKEN, "ts_to": date}
